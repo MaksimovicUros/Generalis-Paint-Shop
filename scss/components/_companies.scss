@@ -1,0 +1,139 @@
+.companies {
+  padding-bottom: 60px;
+  background-color: $main_white;
+}
+
+.companies__container {
+  max-width: 1310px;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  @include breakpoint(mobile) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.companies__description {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.companies__heading {
+  font-size: 42px;
+  color: $main_black;
+}
+
+.companies__paragraph {
+  font-size: 18px;
+  color: $main_black;
+  width: 90%;
+  margin: auto;
+}
+
+.companies__border {
+  width: 65%;
+  height: 1.5px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: $main_orange;
+}
+
+.companies__accordion {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  // gap: 50px;
+  @include breakpoint(tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.companies__company {
+  text-align: center;
+  max-width: 280px;
+  width: 100%;
+  height: 185px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid $main_black;
+  transition: 0.5s ease height;
+  margin-right: 50px;
+  margin-bottom: 100px;
+
+  @include breakpoint(medium-desktop) {
+    margin-right: 0px;
+  }
+
+  @include breakpoint(tablet) {
+    max-width: none;
+    width: 90%;
+    margin: 40px auto;
+  }
+}
+
+.companies__logo-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.companies__logo {
+  width: 100%;
+  @include breakpoint(tablet) {
+    width: 45%;
+  }
+  @include breakpoint(mobile) {
+    width: 70%;
+  }
+}
+
+.companies__button {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  background-color: white;
+  &:hover {
+    cursor: pointer;
+  }
+  @include breakpoint(mobile) {
+    margin-top: 50px;
+  }
+  @include breakpoint(medium-mobile) {
+    margin-top: 60px;
+  }
+  @include breakpoint(mobile-small) {
+    margin-top: 70px;
+  }
+}
+
+.company__arrow {
+  width: 30px;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.companies__panel {
+  text-align: left;
+  background-color: white;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s linear opacity;
+}
+
+.companies__item {
+  padding-bottom: 20px;
+  padding-left: 25px;
+  font-size: 18px;
+  color: $main_black;
+}
+
+.con-banner {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+}

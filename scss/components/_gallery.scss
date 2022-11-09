@@ -1,0 +1,34 @@
+.gallery {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.gallery__header {
+    text-align: center;
+    font-size: 42px;
+}
+
+.gallery__images-wrapper {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.gallery__image {
+    width: 24%;
+    height: 300px;
+    margin-right: 40px;
+    transition: 1s all ease-in-out;
+    &:hover {
+        width: 30%;
+        height: 350px;
+    }
+}
+
+.gallery__border {
+    width: 65%;
+    height: 1.5px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: $main-orange;
+}

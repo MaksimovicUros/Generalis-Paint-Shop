@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <title>Generalis</title>
+  </head>
+
+  <body id="js-body">
+    <header class="header" id="js-header">
+      <div class="header__wrapper">
+        <div class="header__logo-container">
+          <img src="./images/Generalis logo final.jpg" alt="Generalis Logo" class="header__logo-image">
+        </div>
+        <div class="header__menu-container">
+          <div class="header__hamburger js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <nav class="header__nav js-nav-bar">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__item-link current-link js-nav-item"
+              >Početna</a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#about" class="header__item-link js-nav-item">O nama</a>
+          </li>
+          <li class="header__item">
+            <a href="#companies" class="header__item-link js-nav-item">Partneri</a>
+          </li>
+          <li class="header__item">
+            <a href="#gallery" class="header__item-link js-nav-item">Galerija</a>
+          </li>
+          <li class="header__item">
+            <a href="#contact" class="header__item-link js-nav-item">Kontakt</a>
+          </li>
+          </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider__header-wrapper"></div>
+              <img src="./images/slider2.jpg" alt="" class="swiper__image" />
+            </div>
+            <div class="swiper-slide">
+              <div class="slider__header-wrapper"></div>
+              <img src="./images/slider1.jpg" alt="" class="swiper__image" />
+            </div>
+            <div class="swiper-slide">
+              <div class="slider__header-wrapper"></div>
+              <img src="./images/slider3.jpg" alt="" class="swiper__image" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="banner">
+        <img
+          src="./images/con-border.jpg"
+          alt="construction-tape"
+          class="con-banner"
+        />
+      </div>
+      <section class="about" id="about">
+        <div class="about__container">
+          <h1 class="about__heading">O nama</h1>
+          <div class="companies__border"></div>
+          <p class="about__paragraph">
+            Generalis T.R. je specijalizovana prodavnica osnovana 2019 godine sa ciljem podizanja nivoa kvaliteta usluge
+            i trgovine u sferi boja, lakova, izolacija, dekorativnih tehnika, suve gradnje, fasada, polaganje keramike elektromaterijala, šrafovske robe i još mnogo toga.
+            Širina našeg asortimana nam daje mogućnost davanje više idejnih rešenja za bilo koji upit.
+            Naše višegodišnje iskustvo u navedenim oblastima sa brzim razvojem novih tehnologija i prihvatanjem istih
+            se pokazalo kao odličan recept za dobijanje poverenja naših kupaca kao i majstora-izvodjača.
+            Neprestanom saradnjom, učenjem naše tehničke podrške i tehnologija naših dobavljača brzo dolazimo do ostvarenja svih želja klijenata, kao i rešenja njihovih problema.
+            <br>
+            <blockquote class="about__quote"> <i>"Koreni učenja su gorki ali plodovi su slatki"</i> -Aristotel</blockquote> 
+          </p>
+        </div>
+      </section>
+      <section class="companies" id="companies">
+        <div class="companies__container">
+          <div class="companies__description">
+            <h1 class="companies__heading">Naši Partneri</h1>
+            <div class="companies__border"></div>
+          </div>
+          <div class="companies__accordion">
+            <div class="companies__company js-company">
+              <div class="companies__logo-container">
+                <a href="https://www.austrotherm.rs/" target="blank"><img
+                  src="./images/Logo/Austrotherm.jpg"
+                  alt="company jub logo"
+                  class="companies__logo"
+                /></a>
+              </div>
+              <div class="companies__button js-accordion-button">
+                <img
+                  src="./images/down-arrow.png"
+                  alt="down arrow"
+                  class="company__arrow js-company-arrow"
+                />
+              </div>
+              <div class="companies__panel">
+                <ul class="companies__list">
+                  <li class="companies__item">Stiropor svih debljina</li>
+                  <li class="companies__item">Stirodur</li>
+                  <li class="companies__item">Austrotherm EPS T650</li>
+                  <li class="companies__item">Grafitni stiropor</li>
+                </ul>
+              </div>
+            </div>
+            <div class="companies__company js-company">
+              <div class="companies__logo-container">
+                <a href="https://www.bomax.rs/" target="blank"><img
+                  src="./images/Logo/Bomax.jpg"
+                  alt="company jub logo"
+                  class="companies__logo"
+                /></a>
+              </div>
+              <div class="companies__button js-accordion-button">
+                <img
+                  src="./images/down-arrow.png"
+                  alt="down arrow"
+                  class="company__arrow js-company-arrow"
+                />
+              </div>
+              <div class="companies__panel">
+                <ul class="companies__list">
+                  <li class="companies__item">Ugaone lajsne za keramiku</li>
+                  <li class="companies__item">Krovne folije</li>
+                  <li class="companies__item">Aquasan podni slivnici</li>
+                  <li class="companies__item">Brinox creva</li>
+                </ul>
+              </div>
+            </div>
+            <div class="companies__company js-company">
+              <div class="companies__logo-container">
+               <a href="https://esternotrade.com/" target="blank"> <img
+                src="./images/Logo/Gardenmaster.jpg"
+                alt="company jub logo"
+                class="companies__logo"
+              /></a>
+              </div>
+              <div class="companies__button js-accordion-button">
+                <img
+                  src="./images/down-arrow.png"
+                  alt="down arrow"
+                  class="company__arrow js-company-arrow"
+                />
+              </div>
+              <div class="companies__panel">
+                <ul class="companies__list">
+                  <li class="companies__item">Električni alati</li>
+                  <li class="companies__item">Aku alati</li>
+                  <li class="companies__item">Baterije za aku alate</li>
+                  <li class="companies__item">Program za uredjivanje dvorišta</li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex-break"></div>
+            <div class="companies__company js-company">
+              <div class="companies__logo-container">
+               <a href="https://www.jub.rs/" target="blank"> <img
+                src="./images/Logo/Jub.png"
+                alt="company jub logo"
+                class="companies__logo"
+              /></a>
+              </div>
+              <div class="companies__button js-accordion-button">
+                <img
+                  src="./images/down-arrow.png"
+                  alt="down arrow"
+                  class="company__arrow js-company-arrow"
+                />
+              </div>
+              <div class="companies__panel">
+                <ul class="companies__list">
+                  <li class="companies__item">Fasani sistemi</li>
+                  <li class="companies__item">Zaštita za drvo i metal</li>
+                  <li class="companies__item">Unutrasšnje i spoljašnje boje</li>
+                  <li class="companies__item">Ugradnja keramike i hidroizolacija</li>
+                </ul>
+              </div>
+            </div>
+            <div class="companies__company js-company">
+              <div class="companies__logo-container">
+                <a href="https://www.maximapaints.com/sr/pocetna" target="blank"><img
+                  src="./images/Logo/Maxima.jpg"
+                  alt="company jub logo"
+                  class="companies__logo"
+                /></a>
+              </div>
+              <div class="companies__button js-accordion-button">
+                <img
+                  src="./images/down-arrow.png"
+                  alt="down arrow"
+                  class="company__arrow js-company-arrow"
+                />
+              </div>
+              <div class="companies__panel">
+                <ul class="companies__list">
+                  <li class="companies__item">Fasadni sistemi sa garancijom</li>
+                  <li class="companies__item">Boje za dekoraciju enterijera i eksterijera</li>
+                  <li class="companies__item">Zidne tehnike</li>
+                  <li class="companies__item">Hidroizolacija i ugradnja</li>
+                </ul>
+              </div>
+            </div>
+            <div class="companies__company js-company">
+              <div class="companies__logo-container">
+               <a href="https://nevenacolor.co.rs/" target="blank"> <img
+                src="./images/Logo/Nevena-color.png"
+                alt="company jub logo"
+                class="companies__logo"
+              /></a>
+              </div>
+              <div class="companies__button js-accordion-button">
+                <img
+                  src="./images/down-arrow.png"
+                  alt="down arrow"
+                  class="company__arrow js-company-arrow"
+                />
+              </div>
+              <div class="companies__panel">
+                <ul class="companies__list">
+                  <li class="companies__item">Boje i lakovi za uredjenje drvenih i metalnih površina</li>
+                  <li class="companies__item">3x1 boje</li>
+                  <li class="companies__item">Industrijski premazi</li>
+                  <li class="companies__item">Lakovi za parket</li>
+                </ul>
+              </div>
+            </div>
+            <div class="companies__company js-company">
+              <div class="companies__logo-container">
+               <a href="https://www.sika.com/" target="blank"> <img
+                src="./images/Logo/Sika.png"
+                alt="company sika logo"
+                class="companies__logo"
+              /></a>
+              </div>
+              <div class="companies__button js-accordion-button">
+                <img
+                  src="./images/down-arrow.png"
+                  alt="down arrow"
+                  class="company__arrow js-company-arrow"
+                />
+              </div>
+              <div class="companies__panel">
+                <ul class="companies__list">
+                  <li class="companies__item">Hidroizolacije</li>
+                  <li class="companies__item">Lepkovi</li>
+                  <li class="companies__item">Silikoni i pur pene</li>
+                  <li class="companies__item">Aditivi za beton i malter</li>
+                </ul>
+              </div>
+            </div>
+            <div class="companies__company js-company">
+              <div class="companies__logo-container">
+               <a href="https://www.tkk.si/sr/" target="blank"> <img
+                src="./images/Logo/Tkk.jpg"
+                alt="company jub logo"
+                class="companies__logo"
+              /></a>
+              </div>
+              <div class="companies__button js-accordion-button">
+                <img
+                  src="./images/down-arrow.png"
+                  alt="down arrow"
+                  class="company__arrow js-company-arrow"
+                />
+              </div>
+              <div class="companies__panel">
+                <ul class="companies__list">
+                  <li class="companies__item">Silikoni</li>
+                  <li class="companies__item">Pur pene</li>
+                  <li class="companies__item">Aditivi za betone i maltere</li>
+                  <li class="companies__item">Tehnički spejeve</li>
+                </ul>
+              </div>
+            </div>
+            <div class="companies__company js-company">
+              <div class="companies__logo-container">
+               <a href="https://www.yumcommerce.rs/" target="blank"> <img
+                src="./images/Logo/Yum-commerce.png"
+                alt="company jub logo"
+                class="companies__logo"
+              /></a>
+              </div>
+              <div class="companies__button js-accordion-button">
+                <img
+                  src="./images/down-arrow.png"
+                  alt="down arrow"
+                  class="company__arrow js-company-arrow"
+                />
+              </div>
+              <div class="companies__panel">
+                <ul class="companies__list">
+                  <li class="companies__item">Ukrasne lajsne za interijer i eksterijer</li>
+                  <li class="companies__item">Fasadne lajsne</li>
+                  <li class="companies__item">Plafonske obloge</li>
+                  <li class="companies__item">Fasadne obloge</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="gallery__container">
+          <h2 class="gallery__header">Galerija</h2>
+          <div class="gallery__border"></div>
+          <div class="gallery__images-wrapper">
+            <img
+              src="./images/galerija/galerija1.jpg"
+              alt="slika u galeriji"
+              class="gallery__image"
+            />
+            <img
+              src="./images/galerija/galerija2.jpg"
+              alt="slika u galeriji"
+              class="gallery__image"
+            />
+            <img
+              src="./images/galerija/galerija3.jpg"
+              alt="slika u galeriji"
+              class="gallery__image"
+            />
+            <img
+              src="./images/galerija/galerija4.jpg"
+              alt="slika u galeriji"
+              class="gallery__image"
+            />
+            <img
+              src="./images/galerija/galerija5.jpg"
+              alt="slika u galeriji"
+              class="gallery__image"
+            />
+            <img
+              src="./images/galerija/galerija6.jpg"
+              alt="slika u galeriji"
+              class="gallery__image"
+            />
+            <img
+              src="./images/galerija/galerija7.jpg"
+              alt="slika u galeriji"
+              class="gallery__image"
+            />
+            <img
+              src="./images/galerija/galerija8.jpg"
+              alt="slika u galeriji"
+              class="gallery__image"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="footer__contact-map">
+        <div class="footer__contact">
+          <p class="footer__address">
+            <i style="font-size: 24px" class="fa">&#xf041;</i>
+            Novosadski put 24 <br />
+            Veternik <br />
+            <i class="fa fa-envelope" aria-hidden="true"></i> email adresa<br />
+            <i style="font-size: 24px" class="fa">&#xf095;</i>
+            <a href="tel:+38121820206" style="color: white">021 820206</a>
+            <br />
+          </p>
+          <img
+            src="./images/orange-watercolor-brush-stroke-2-17.png"
+            alt=""
+            class="footer__img"
+          />
+        </div>
+        <div class="footer__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.9671493065175!2d19.75804821537562!3d45.24845705583445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b1199c0ebac5b%3A0xd8bfbedc34996be4!2sFARBARA%20GENERALIS%20TR!5e0!3m2!1sen!2srs!4v1636231853739!5m2!1sen!2srs"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="footer__iframe"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <div class="footer__border">
+      <div class="footer__social-icons">
+        <div class="footer__copyright">&copy;All rights reserved</div>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/farbara.generalis.5" target="_blank"
+            ><img
+              src="./images/facebook-brands.svg"
+              alt="facebook"
+              class="footer__facebook"
+          /></a>
+          <img
+            src="./images/instagram-brands.svg"
+            alt="instagram"
+            class="footer__instagram"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

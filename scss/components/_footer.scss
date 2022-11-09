@@ -1,0 +1,144 @@
+.footer {
+  background: #2e2d2c;
+  padding: 50px 0;
+  width: 100%;
+  @include breakpoint(mobile) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.footer__contact-map {
+  max-width: 1310px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  @include breakpoint(tablet) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @include breakpoint(medium-mobile) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.footer__address {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.6;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: right;
+  @include breakpoint(tablet) {
+    top: 40%;
+    font-size: 20px;
+  }
+  @include breakpoint(mobile) {
+    top: 37%;
+    font-size: 18px;
+  }
+
+  @include breakpoint(medium-mobile) {
+    font-size: 16px;
+    top: 37%;
+  }
+  @include breakpoint(small-mobile) {
+    font-size: 13px;
+    top: 35%;
+  }
+}
+
+.footer__img {
+  max-height: 200px;
+  @include breakpoint(tablet) {
+    margin-bottom: 50px;
+  }
+  @include breakpoint(mobile) {
+    max-width: 350px;
+  }
+  @include breakpoint(medium-mobile) {
+    max-width: 300px;
+  }
+  @include breakpoint(small-mobile) {
+    max-width: 260px;
+  }
+}
+
+.footer__contact {
+  position: relative;
+}
+.footer__iframe {
+  border-radius: 30px;
+  width: 500px;
+  height: 250px;
+  @include breakpoint(mobile) {
+    width: 350px;
+    height: 180px;
+  }
+  @include breakpoint(medium-mobile) {
+    width: 300px;
+    height: 160px;
+  }
+  @include breakpoint(small-mobile) {
+    width: 260px;
+    height: 140px;
+  }
+}
+.footer__facebook {
+  max-height: 25px;
+  padding-right: 20px;
+  color: $main_black;
+  @include breakpoint(mobile) {
+    padding-right: 10px;
+  }
+}
+.footer__instagram {
+  max-height: 27px;
+  color: $main_black;
+}
+
+.footer_phone-icon {
+  width: 20px;
+}
+.footer__border {
+  background-color: $main_orange;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer__social-icons {
+  margin: auto;
+  max-width: 1310px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  @include breakpoint(tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @include breakpoint(medium-mobile) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @include breakpoint(mobile-small) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.footer__social {
+  text-align: right;
+  flex: 2;
+}
+
+.footer__copyright {
+  @include breakpoint(small-mobile) {
+    font-size: 14px;
+  }
+}
